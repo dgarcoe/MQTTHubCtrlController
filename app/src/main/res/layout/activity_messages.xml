@@ -3,8 +3,9 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
 
+
     <TextView
-        android:id="@+id/textViewBroker"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -13,10 +14,10 @@
         android:layout_marginLeft="33dp"
         android:layout_marginStart="33dp"
         android:layout_marginTop="46dp"
-        android:text="Broker URL" />
+        android:text="Hub" />
 
     <EditText
-        android:id="@+id/editTextBroker"
+        android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -29,55 +30,53 @@
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewUser"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewBroker"
-        android:layout_alignStart="@+id/textViewBroker"
-        android:layout_below="@+id/textViewBroker"
-        android:layout_marginTop="40dp"
-        android:text="User" />
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:text="Port" />
 
     <EditText
-        android:id="@+id/editTextUser"
+        android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextBroker"
-        android:layout_alignStart="@+id/editTextBroker"
-        android:layout_below="@+id/editTextBroker"
-        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="19dp"
         android:ems="10"
         android:inputType="textPersonName" />
 
     <TextView
-        android:id="@+id/textViewPwd"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textViewUser"
-        android:layout_alignStart="@+id/textViewUser"
-        android:layout_below="@+id/textViewUser"
-        android:layout_marginTop="40dp"
-        android:text="Password" />
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="50dp"
+        android:text="Power" />
 
-    <EditText
-        android:id="@+id/editTextPwd"
+    <ToggleButton
+        android:id="@+id/toggleButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextUser"
-        android:layout_alignStart="@+id/editTextUser"
-        android:layout_below="@+id/editTextUser"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="25dp"
+        android:text="ToggleButton" />
 
     <Button
-        android:id="@+id/buttonConnect"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextPwd"
-        android:layout_marginTop="30dp"
+        android:layout_below="@+id/toggleButton2"
         android:layout_centerHorizontal="true"
-        android:text="Connect" />
-
+        android:layout_marginTop="23dp"
+        android:text="Send message" />
 
 </RelativeLayout>
