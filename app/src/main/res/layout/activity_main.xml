@@ -68,16 +68,78 @@
         android:layout_below="@+id/editTextUser"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/buttonConnect"
+    <TextView
+        android:id="@+id/textViewHub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPwd"
+        android:layout_alignStart="@+id/textViewPwd"
+        android:layout_below="@+id/textViewPwd"
+        android:layout_marginTop="46dp"
+        android:text="Hub" />
+
+    <EditText
+        android:id="@+id/editTextHub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextPwd"
+        android:layout_alignStart="@+id/editTextPwd"
         android:layout_below="@+id/editTextPwd"
         android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewHub"
+        android:layout_alignStart="@+id/textViewHub"
+        android:layout_below="@+id/textViewHub"
+        android:layout_marginTop="50dp"
+        android:text="Port" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextHub"
+        android:layout_alignStart="@+id/editTextHub"
+        android:layout_below="@+id/editTextHub"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewHub"
+        android:layout_alignStart="@+id/textViewHub"
+        android:layout_below="@+id/textViewPort"
+        android:layout_marginTop="50dp"
+        android:text="Power" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextHub"
+        android:layout_alignStart="@+id/editTextHub"
+        android:layout_below="@+id/editTextPort"
+        android:layout_marginTop="25dp"
+        android:text="ToggleButton" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButtonPower"
         android:layout_centerHorizontal="true"
-        android:text="Connect" />
+        android:layout_marginTop="23dp"
+        android:text="Send message" />
 
 
 </RelativeLayout>
